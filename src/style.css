@@ -65,7 +65,7 @@ form {
 .board-table {
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 33vh;
   border: 2px solid rgb(91, 88, 88);
   margin-top: 4vh;
   margin-bottom: 4vh;
@@ -99,4 +99,12 @@ a {
   justify-content: end;
   width: 100%;
   margin-top: 5vh;
+}
+
+input {
+  border: 3px solid;
+}
+
+.submit-btn {
+  border: 3px solid;
 }
