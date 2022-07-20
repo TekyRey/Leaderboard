@@ -68,6 +68,7 @@ form {
   height: 40vh;
   border: 2px solid rgb(91, 88, 88);
   margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 ul {
@@ -89,7 +90,7 @@ a {
 }
 
 .one {
-  background: darkgray;
+  background: rgb(209, 207, 207);
   width: 100%;
 }
 
