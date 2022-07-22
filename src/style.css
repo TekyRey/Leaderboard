@@ -12,11 +12,12 @@ header {
   gap: 10px;
   margin-top: 5vh;
   border: solid 2px black;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Montserrat', sans-serif;
-  background-color: rgb(65, 35, 94);
-  color: rgb(215, 231, 237);
+  background-color: rgb(52, 218, 162);
+  color: rgb(8, 8, 8);
 }
 
 .title {
@@ -29,17 +30,17 @@ header {
 
 .content {
   display: flex;
-  background-image: url(../src/img/cat.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: bottom;
   background-position-x: right;
   flex-direction: row;
+  height: 100vh;
   padding-left: 10vh;
   padding-top: 7vh;
   align-items: flex-start;
   gap: 100px;
-  border: 2px solid  rgb(155, 220, 248);
+  border: 2px solid  rgb(180, 223, 241);
   box-shadow: 6px 5px rgb(160, 164, 164);
   border-radius: 10px;
 }
@@ -55,22 +56,6 @@ header {
   flex-direction: column;
 }
 
-.score-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
-.score-list-item{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-}
-
 .board-refresh-btn {
   display: flex;
   justify-content: space-around;
@@ -82,6 +67,7 @@ header {
   font-size: 15px;
   border: 2px solid black;
   margin-top: 5vh;
+  margin-left: 20vh;
 }
 
 form {
@@ -124,9 +110,9 @@ a {
 
 .add-score {
   display: flex;
-  justify-content: end;
   width: 100%;
   margin-top: 5vh;
+  margin-left: 5vh;
 }
 
 .display-table-list:nth-child(even) {
