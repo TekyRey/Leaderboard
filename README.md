@@ -1,5 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Leaderboard
+This is a project that fetches data from the leadership service api
 
 ## Built With
 
@@ -7,18 +8,14 @@
 - CSS
 - Javascript
 
-## Live Demo
-
-[Live Demo Link]()
-
-
-
 ### Prerequisites
 - VS CODE
 
 ### Setup
-Clone the repository using the command "git clone https://github.com/TekyRey/Leaderboard.git" in your local machine
-After cloning the repository, open it on VS code or any code editor of your your choice, move into the folder you cloned into and open the index.html file using your browser
+- Clone the repository using the command "git clone https://github.com/TekyRey/Leaderboard.git" in your local machine
+- After cloning the repository, open it on VS code or any code editor of your your choice
+- Move into the folder you cloned and run npm install
+- Run npm start to start the project.
 
 ## Authors
 
