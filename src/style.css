@@ -12,9 +12,12 @@ header {
   gap: 10px;
   margin-top: 5vh;
   border: solid 2px black;
-  margin-left: 20%;
-  margin-right: 20%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Montserrat', sans-serif;
+  background-color: rgb(48, 240, 176);
+  color: rgb(8, 8, 8);
 }
 
 .title {
@@ -27,12 +30,19 @@ header {
 
 .content {
   display: flex;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: right;
   flex-direction: row;
-  align-self: start;
+  height: 100vh;
   padding-left: 10vh;
   padding-top: 7vh;
   align-items: flex-start;
-  gap: 50px;
+  gap: 100px;
+  border: 2px solid  rgb(180, 223, 241);
+  box-shadow: 6px 5px rgb(160, 164, 164);
+  border-radius: 10px;
 }
 
 .board-section {
@@ -53,22 +63,26 @@ header {
   gap: 30px;
 }
 
-.board-refresh-btn button {
-  font-size: 20px;
-  border: 3px solid;
+.board-submit-btn button {
+  font-size: 15px;
+  border: 2px solid black;
+  margin-top: 5vh;
+  margin-left: 20vh;
 }
 
 form {
-  margin-top: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
 }
 
 .board-table {
   display: flex;
   flex-direction: column;
-  height: 33vh;
   border: 2px solid rgb(91, 88, 88);
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  border-radius: 10px;
 }
 
 ul {
@@ -90,21 +104,43 @@ a {
 }
 
 .one {
-  background: rgb(209, 207, 207);
+  background: darkgray;
   width: 100%;
 }
 
 .add-score {
   display: flex;
-  justify-content: end;
   width: 100%;
   margin-top: 5vh;
+  margin-left: 5vh;
+}
+
+.display-table-list:nth-child(even) {
+  background: rgb(32, 6, 59);
+  width: 100%;
+}
+
+.listscore {
+  color: aliceblue;
+}
+
+.btn-refresh {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 1em;
+  box-shadow: 3px 2px white;
 }
 
 input {
-  border: 3px solid;
+  height: 6vh;
 }
 
-.submit-btn {
-  border: 3px solid;
+.btn-submit {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 1em;
+  box-shadow: 3px 2px white;
+  align-self: center;
 }

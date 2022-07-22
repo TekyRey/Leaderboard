@@ -17,27 +17,26 @@
             <section class="board-section">
                 <article class="board-refresh-btn">
                     <h2>Recent scores</h2>
-                    <button>Refresh</button>
+                    <button class="btn-refresh">Refresh</button>
                 </article>
                 <article class="board-table">
-                    <ul class="score">
-                        <li class="one"><a href="#">name: 100</a></li>
-                        <li class="two"><a href="#">name: 50</a></li>
-                        <li class="one"><a href="#">name: 150</a></li>
-                        <li class="two"><a href="#">name: 30</a></li>
-                        <li class="one"><a href="#">name: 300</a></li>
-                    </ul>
+                    <table board-table>
+                            <tbody id="score_list">
+                                
+                            </tbody>
+
+                        </table>
                 </article>
             </section>
 
             <section class="score-board">
                 <h2> Add your score </h2>
-                <form action="#">
-                    <input type="text" placeholder="Your name"><br><br>
-                    <input type="text" placeholder="Your score">
+                <form action="#" id="form">
+                    <input id="user_name" type="text" placeholder="Your name"><br><br>
+                    <input id="user_score" type="text" placeholder="Your score">
                 </form>
                 <div class="add-score">
-                    <button class= "submit-btn" type="submit">Submit</button>
+                    <button class= "submit-btn board-refresh-btn" id="add-btn" type="submit">Submit</button>
                 </div>
             </section>
         </div>
