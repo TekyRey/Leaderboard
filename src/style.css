@@ -12,9 +12,11 @@ header {
   gap: 10px;
   margin-top: 5vh;
   border: solid 2px black;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Montserrat', sans-serif;
+  background-color: rgb(65, 35, 94);
+  color: rgb(215, 231, 237);
 }
 
 .title {
@@ -27,12 +29,19 @@ header {
 
 .content {
   display: flex;
+  background-image: url(../src/img/cat.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-position-x: right;
   flex-direction: row;
-  align-self: start;
   padding-left: 10vh;
   padding-top: 7vh;
   align-items: flex-start;
-  gap: 50px;
+  gap: 100px;
+  border: 2px solid  rgb(155, 220, 248);
+  box-shadow: 6px 5px rgb(160, 164, 164);
+  border-radius: 10px;
 }
 
 .board-section {
@@ -46,6 +55,22 @@ header {
   flex-direction: column;
 }
 
+.score-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.score-list-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
 .board-refresh-btn {
   display: flex;
   justify-content: space-around;
@@ -53,22 +78,25 @@ header {
   gap: 30px;
 }
 
-.board-refresh-btn button {
-  font-size: 20px;
-  border: 3px solid;
+.board-submit-btn button {
+  font-size: 15px;
+  border: 2px solid black;
+  margin-top: 5vh;
 }
 
 form {
-  margin-top: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
 }
 
 .board-table {
   display: flex;
   flex-direction: column;
-  height: 33vh;
   border: 2px solid rgb(91, 88, 88);
   margin-top: 4vh;
-  margin-bottom: 4vh;
+  border-radius: 10px;
 }
 
 ul {
@@ -90,7 +118,7 @@ a {
 }
 
 .one {
-  background: rgb(209, 207, 207);
+  background: darkgray;
   width: 100%;
 }
 
@@ -101,10 +129,32 @@ a {
   margin-top: 5vh;
 }
 
-input {
-  border: 3px solid;
+.display-table-list:nth-child(even) {
+  background: rgb(32, 6, 59);
+  width: 100%;
 }
 
-.submit-btn {
-  border: 3px solid;
+.listscore {
+  color: aliceblue;
+}
+
+.btn-refresh {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 1em;
+  box-shadow: 3px 2px white;
+}
+
+input {
+  height: 6vh;
+}
+
+.btn-submit {
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  font-size: 1em;
+  box-shadow: 3px 2px white;
+  align-self: center;
 }

@@ -19,7 +19,7 @@ const submitScore = async (userName, userScore) => {
         'Content-Type': 'application/json',
         charset: 'UTF-8',
       },
-    }
+    },
   );
   const gameResult = await response.json();
   return gameResult;
@@ -27,19 +27,33 @@ const submitScore = async (userName, userScore) => {
 
 const fetchData = async () => {
   const response = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores`,
   );
   const getResult = await response.json();
   const resultArray = getResult.result;
-  const values = resultArray
-    .map(
-      (result) => `<li class='display-table-list'>
-                      <p>${result.user}: ${result.score}</p>
-                  </li>`
-    )
-    .join('');
-  listScore.innerHTML = values;
-};
+  // display results in a table
+  resultArray.forEach((result) => {
+    const tr = document.createElement('tr');
+    const tdUser = document.createElement('td');
+    const tdScore = document.createElement('td');
+    tdUser.innerHTML = result.user;
+    tdScore.innerHTML = result.score;
+    tr.appendChild(tdUser);
+    tr.appendChild(tdScore);
+    listScore.appendChild(tr);
+  }
+  );
+}
+
+// const values = resultArray
+//   .map(
+//     (result) => `<li class="display-table-list">
+//                     <p>${result.user}: ${result.score}</p>
+//                 </li>`
+//   )
+//   .join("");
+//   listScore.innerHTML = values;
+// };
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
@@ -47,8 +61,9 @@ form.addEventListener('submit', async (e) => {
   form.name.value = '';
   form.score.value = '';
 });
-
 refresh.addEventListener('click', async () => {
+  // clear the table
+  listScore.innerHTML = '';
   fetchData();
 });
 
